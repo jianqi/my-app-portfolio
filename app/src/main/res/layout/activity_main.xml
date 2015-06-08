@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#1DE9B6">
+
+    <TextView android:text="@string/title" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spotify_streamer"
+            android:id="@+id/button"
+            android:minHeight="60dp"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="360dp"
+            android:onClick="sendMessage"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_app"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="60dp"
+            android:onClick="sendMessage"/>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_app"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="60dp"
+            android:onClick="sendMessage"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/build_it_bigger"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="60dp"
+            android:onClick="sendMessage"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/xyz_reader"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="60dp"
+            android:onClick="sendMessage"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/capstone_ownapp"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="60dp"
+            android:background="#ffffb64d"
+            android:onClick="sendMessage"/>
+    </LinearLayout>
+</RelativeLayout>
